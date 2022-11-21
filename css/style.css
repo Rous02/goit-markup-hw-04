@@ -344,13 +344,20 @@ figcaption {
     }
     
 .our-customers {
-        display: flex;
-        justify-content: space-between;
-        transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
     }
-    
-    
-.customer1 .cls-1:hover, .customers1 .cls-1:focus {
+
+.link-customer {
+    transition: var(--transition);
+}
+
+.link-customer rect {
+    fill: transparent;
+    stroke: #2F303A;
+}
+      
+.link-customer:hover, .link-customer:focus {
         fill: var(--color-blueAnimation);
         stroke: var(--color-blueAnimation);
         stroke-width: 0.2px;
